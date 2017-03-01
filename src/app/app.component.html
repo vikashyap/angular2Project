@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let item of list; let i = index" (click)="setActive(i)"><a [ngClass]="{'active': item.isActive}" class=""
+   routerLink="{{item.title}}">{{item.title}}</a></li>
+</ul>
+<div class="container">
+<router-outlet></router-outlet>
+</div>
+
